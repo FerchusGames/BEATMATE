@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3778e2a2264cd75438024c79ce484547
+guid: 0a62b29e4442a9b4fabd0043943c7219
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,196 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: B_Heart
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f8277675fd665e41bb91a37b386a184
-      internalID: 1855238987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: B_Rook
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d224f41731f8cf488704584dd1debf7
-      internalID: -932997367
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: B_Knight
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48c1b97dd97c92542ac4e3a932aea650
-      internalID: -1146891928
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: B_Bishop
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb6cca51011ebac48bbc96bd54475c56
-      internalID: -146329599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: B_Queen
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5eb91459a58d9814dbdc5e621c5a9b17
-      internalID: -1047914021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: B_Pawn
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d36597c58d5108a4990080ba9e7fb99b
-      internalID: 1950863533
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: R_Heart
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5664a9d87fdf942418463737a655bf12
-      internalID: 491096249
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: R_Rook
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2de252ec69f49040b4f3b4e8e0a9f0f
-      internalID: -982021274
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: R_Knight
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a4c4554d1b12ed0469387058c1bf492a
-      internalID: -1399819695
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: R_Bishop
+      name: CheckerTiles_0
       rect:
         serializedVersion: 2
         x: 0
@@ -320,20 +131,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2e091b80b78d8b41a6ffeb83ff52112
-      internalID: 911121607
+      spriteID: 39b9e4e8af3466445bb8c59abc0076b7
+      internalID: -32828633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: R_Queen
+      name: CheckerTiles_1
       rect:
         serializedVersion: 2
         x: 16
@@ -341,20 +152,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75ef30e0be018c34facc5cce76eccb7e
-      internalID: 282804484
+      spriteID: ade8630973bce2641954dfa9480ac2da
+      internalID: -98650700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: R_Pawn
+      name: CheckerTiles_2
       rect:
         serializedVersion: 2
         x: 32
@@ -362,20 +173,41 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 785ee3253bab8d042927673d15551b58
-      internalID: 1164652995
+      spriteID: d1a5c94c9b02dd142b943a2cda1dc044
+      internalID: -639908121
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D_Heart
+      name: CheckerTiles_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8502312955646f04b97d1febfc63f967
+      internalID: 338701797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CheckerTiles_4
       rect:
         serializedVersion: 2
         x: 0
@@ -383,20 +215,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de8425fdd54778541820b6f936620fbb
-      internalID: -373853598
+      spriteID: c09c97548178a264aaabf4ed018c62e8
+      internalID: -1991924586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D_Rook
+      name: CheckerTiles_5
       rect:
         serializedVersion: 2
         x: 16
@@ -404,20 +236,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de2335873c1b6a940a8f6bc4ff71e793
-      internalID: 789710341
+      spriteID: 663c118499b2bb34abe84c699a573d67
+      internalID: 430200724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D_Knight
+      name: CheckerTiles_6
       rect:
         serializedVersion: 2
         x: 32
@@ -425,20 +257,41 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02e99abd99b77664fa48836fe992cb45
-      internalID: -1232011044
+      spriteID: cd1df834bcde25b4bae585f5f1cef72a
+      internalID: 90125903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D_Bishop
+      name: CheckerTiles_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d33f72a52b3f7f4296aa840bfd40ec6
+      internalID: 303699900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CheckerTiles_8
       rect:
         serializedVersion: 2
         x: 0
@@ -446,20 +299,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 712f7601744d3bf47afb49bb0dca6543
-      internalID: 1342421711
+      spriteID: a43a061e326bd6643985315470f31944
+      internalID: -787750559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D_Queen
+      name: CheckerTiles_9
       rect:
         serializedVersion: 2
         x: 16
@@ -467,20 +320,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 906af328e2669954db55a09885469c8f
-      internalID: -1212768798
+      spriteID: 8a8b037180d21324f9f73751722c47f5
+      internalID: -1167802828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D_Pawn
+      name: CheckerTiles_10
       rect:
         serializedVersion: 2
         x: 32
@@ -488,14 +341,35 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73be4051c24c67f49a0ac15c3ce1147e
-      internalID: 1668993065
+      spriteID: a51e0dfddebe25f4e9ce7fd1bc9b17b6
+      internalID: 429272514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CheckerTiles_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04aed027c3467d4c8fb2fd855ca21d9
+      internalID: -618704132
       vertices: []
       indices: 
       edges: []
@@ -511,24 +385,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      B_Bishop: -146329599
-      B_Heart: 1855238987
-      B_Knight: -1146891928
-      B_Pawn: 1950863533
-      B_Queen: -1047914021
-      B_Rook: -932997367
-      D_Bishop: 1342421711
-      D_Heart: -373853598
-      D_Knight: -1232011044
-      D_Pawn: 1668993065
-      D_Queen: -1212768798
-      D_Rook: 789710341
-      R_Bishop: 911121607
-      R_Heart: 491096249
-      R_Knight: -1399819695
-      R_Pawn: 1164652995
-      R_Queen: 282804484
-      R_Rook: -982021274
+      CheckerTiles_0: -32828633
+      CheckerTiles_1: -98650700
+      CheckerTiles_10: 429272514
+      CheckerTiles_11: -618704132
+      CheckerTiles_2: -639908121
+      CheckerTiles_3: 338701797
+      CheckerTiles_4: -1991924586
+      CheckerTiles_5: 430200724
+      CheckerTiles_6: 90125903
+      CheckerTiles_7: 303699900
+      CheckerTiles_8: -787750559
+      CheckerTiles_9: -1167802828
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
