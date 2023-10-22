@@ -1,0 +1,31 @@
+[BLANK SCREEN]
+- Your best friend has been acting weird lately.
+- When you ask her about it, she tells you it's nothing.
+- It's time to fight for the truth.
+
+[0 Hits]
+- I've been acting weird? It's probably nothing.
+
+[1 Hit]
+- I... have just been feeling off lately.
+
+[2 Hit]
+- I mean, it's not like me to dwell on things, but...
+
+[3 Hit]
+- It's been hard to admit, even to myself.
+
+[4 Hit]
+- But I've been running away from the truth.
+
+[5 Hit]
+- I think I need to talk about it with you.
+
+[BLANK SCREEN]
+
+(The Metal Heart breaks and white flashes on the screen)
+
+(The blue heart appears)
+
+Made by Ferchus
+
