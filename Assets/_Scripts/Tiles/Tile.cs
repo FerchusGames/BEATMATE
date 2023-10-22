@@ -32,17 +32,8 @@ public abstract class Tile : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (GameManager.Instance.GameState != GameState.HeroesTurn)
-            return;
-
-        if (OccupiedUnit != null)
-        {
-            
-        }
-        else
-        {
-            
-        }
+        if (OccupiedUnit != null) { }
+        else { }
     }
 
     public void SetUnit(BaseUnit unit)
