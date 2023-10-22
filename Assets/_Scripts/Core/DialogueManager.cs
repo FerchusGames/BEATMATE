@@ -27,18 +27,16 @@ namespace Beatmate.Core
         [SerializeField]
         private TextMeshProUGUI _dialogueText;
 
+        [SerializeField]
+        private float _dialoguePause = 2f;
+
         private void Awake()
         {
             Instance = this;
             _audioSource = GetComponent<AudioSource>();
         }
 
-        private void Start()
-        {
-            StartCoroutine(TypeText("I've been acting weird? It's probably nothing"));
-        }
-
-        IEnumerator TypeText(string text)
+        public IEnumerator TypeText(string text)
         {
             _dialogueText.text = "";
             int currentDisplayedCharacterCount = 0;
@@ -49,6 +47,8 @@ namespace Beatmate.Core
                 PlayDialogueSound(currentDisplayedCharacterCount);
                 yield return new WaitForSeconds(_typingInterval);
             }
+            yield return new WaitForSeconds(_dialoguePause);
+            GameManager.Instance.UpdateGameState(GameState.PlayerTurn);
         }
 
         private void PlayDialogueSound(int currentDisplayedCharacterCount)

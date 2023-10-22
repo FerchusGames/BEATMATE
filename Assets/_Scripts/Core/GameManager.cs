@@ -13,9 +13,14 @@ namespace Beatmate.Core
 
         public static event Action<GameState> OnGameStateChange;
 
-        void Awake()
+        private void Awake()
         {
             Instance = this;
+        }
+
+        private void Start()
+        {
+            UpdateGameState(GameState.Dialogue);
         }
 
         public void UpdateGameState(GameState newState)
@@ -46,6 +51,21 @@ namespace Beatmate.Core
             OnGameStateChange?.Invoke(newState);
         }
 
+        public void TurnSwitch()
+        {
+            switch (State)
+            {
+                case GameState.PlayerTurn:
+                    UpdateGameState(GameState.EnemyTurn);
+                    break;
+                case GameState.EnemyTurn:
+                    UpdateGameState(GameState.PlayerTurn);
+                    break;
+                default:
+                    break;
+            }
+        }
+
         private void HandleDefeat()
         {
             throw new NotImplementedException();
@@ -58,17 +78,23 @@ namespace Beatmate.Core
 
         private void HandleEnemyTurn()
         {
-            throw new NotImplementedException();
+            Debug.Log("Enemy turn");
         }
 
         private void HandlePlayerTurn()
         {
-            throw new NotImplementedException();
+            if (!BeatManager.Instance.IsAudioPlaying())
+            {
+                BeatManager.Instance.StartAudio();
+            }
+            Debug.Log("Player turn");
         }
 
         private void HandleDialogue()
         {
-            throw new NotImplementedException();
+            StartCoroutine(
+                DialogueManager.Instance.TypeText("I've been acting weird? It's probably nothing")
+            );
         }
     }
 
