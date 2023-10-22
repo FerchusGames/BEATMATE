@@ -1,0 +1,16 @@
+{
+    "name": "Movement",
+    "rootNamespace": "Beatmate.Movement",
+    "references": [
+        "GUID:8cdef9dbbd2cc6f4e95cc5776bdd6782"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,4 +1,7 @@
-public interface IAction
+namespace Beatmate.Core
 {
-    void Cancel();
+    public interface IAction
+    {
+        void Cancel();
+    }
 }

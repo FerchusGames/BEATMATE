@@ -2,23 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActionScheduler : MonoBehaviour
+namespace Beatmate.Core
 {
-    IAction _currentAction;
-
-    public void StartAction(IAction action)
+    public class ActionScheduler : MonoBehaviour
     {
-        if (_currentAction == action)
-            return;
-        if (_currentAction != null)
+        IAction _currentAction;
+
+        public void StartAction(IAction action)
         {
-            _currentAction.Cancel();
+            if (_currentAction == action)
+                return;
+            if (_currentAction != null)
+            {
+                _currentAction.Cancel();
+            }
+            _currentAction = action;
         }
-        _currentAction = action;
-    }
 
-    public void CancelCurrentAction()
-    {
-        StartAction(null);
+        public void CancelCurrentAction()
+        {
+            StartAction(null);
+        }
     }
 }

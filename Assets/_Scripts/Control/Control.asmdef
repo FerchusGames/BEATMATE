@@ -1,0 +1,18 @@
+{
+    "name": "Control",
+    "rootNamespace": "Beatmate.Control",
+    "references": [
+        "GUID:06472ee37baa18b4eb98a98f627dd2ac",
+        "GUID:8cdef9dbbd2cc6f4e95cc5776bdd6782",
+        "GUID:805253c1b98032f4dbfacaf5e126d934"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
