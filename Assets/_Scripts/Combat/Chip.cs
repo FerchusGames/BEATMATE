@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Beatmate.Movement;
-using PlasticPipe.PlasticProtocol.Messages;
+using Beatmate.Core;
 
 namespace Beatmate.Combat
 {
@@ -17,6 +14,8 @@ namespace Beatmate.Combat
 
         private bool _isSelected = false;
 
+        private Transform _player;
+
         [SerializeField]
         private float _unselectedOpacity = 0.25f;
 
@@ -26,6 +25,40 @@ namespace Beatmate.Combat
         private void Awake()
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
+            _player = GameObject.FindGameObjectWithTag("Player").transform;
+
+            _spriteRenderer.sprite = _pieceSO.RedSprite;
+        }
+
+        private void Update()
+        {
+            if (!_isSelected)
+                return;
+            HighlightAttackTiles();
+        }
+
+        private void HighlightAttackTiles()
+        {
+            TileManager.Instance.UnhighlightAllTiles();
+
+            Vector2Int[] attackOffsets = _pieceSO.IsPawn
+                ? _pieceSO.PossibleAttacks
+                : _pieceSO.PossibleMovements;
+
+            foreach (Vector2Int attackOffset in attackOffsets)
+            {
+                Vector3 tilePosition =
+                    _player.position + new Vector3(attackOffset.x, attackOffset.y, 0);
+
+                Debug.Log(tilePosition);
+
+                Tile tile = TileManager.Instance.GetTile(tilePosition);
+
+                if (tile != null)
+                {
+                    tile.Hightlight();
+                }
+            }
         }
 
         public void Disable()
@@ -45,6 +78,7 @@ namespace Beatmate.Combat
         {
             _isSelected = false;
             _spriteRenderer.color = new Color(1, 1, 1, _unselectedOpacity);
+            TileManager.Instance.UnhighlightAllTiles();
         }
 
         private bool CanSelect()

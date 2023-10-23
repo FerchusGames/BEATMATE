@@ -1781,7 +1781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16a13ecf255022141ad2df854e0c7a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bpm: 150
+  _bpm: 120
   _audioSource: {fileID: 640630308}
   _intervals:
   - _steps: 4
@@ -1822,7 +1822,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e08f0ee63e5d5fb47878416ae0409cab, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7ae89ab0262910b48a74ecb7bb3ef030, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2607,10 +2607,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1934892255}
     m_Modifications:
+    - target: {fileID: 261736657078805070, guid: 1845ef6e8132bf342828945c6c1f51d7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1399819695, guid: 3778e2a2264cd75438024c79ce484547, type: 3}
     - target: {fileID: 1213895643408838197, guid: 1845ef6e8132bf342828945c6c1f51d7, type: 3}
       propertyPath: m_Name
       value: Chip (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3605954970667971463, guid: 1845ef6e8132bf342828945c6c1f51d7, type: 3}
+      propertyPath: _pieceSO
+      value: 
+      objectReference: {fileID: 11400000, guid: e4a6915597e1f1a41a45a94b45062f55, type: 2}
     - target: {fileID: 5983889915216809771, guid: 1845ef6e8132bf342828945c6c1f51d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3
@@ -2716,6 +2724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9939d1b3545e524eaf7f5d0caf2976b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _tilesParent: {fileID: 1108462376}
 --- !u!1 &933943989
 GameObject:
   m_ObjectHideFlags: 0
@@ -5985,10 +5994,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1934892255}
     m_Modifications:
+    - target: {fileID: 261736657078805070, guid: 1845ef6e8132bf342828945c6c1f51d7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 282804484, guid: 3778e2a2264cd75438024c79ce484547, type: 3}
     - target: {fileID: 1213895643408838197, guid: 1845ef6e8132bf342828945c6c1f51d7, type: 3}
       propertyPath: m_Name
       value: Chip (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3605954970667971463, guid: 1845ef6e8132bf342828945c6c1f51d7, type: 3}
+      propertyPath: _pieceSO
+      value: 
+      objectReference: {fileID: 11400000, guid: ba1a9f9177a6ac14e97b4ce559aa12d6, type: 2}
     - target: {fileID: 5983889915216809771, guid: 1845ef6e8132bf342828945c6c1f51d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4
@@ -6997,6 +7014,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1609275929179042240, guid: 3f7122706d7ea094abf0a9c6737c11d0, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1609275929179042240, guid: 3f7122706d7ea094abf0a9c6737c11d0, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5878663719169416003, guid: 3f7122706d7ea094abf0a9c6737c11d0, type: 3}

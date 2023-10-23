@@ -81,7 +81,6 @@ namespace Beatmate.Core
         private void HandleEnemyTurn()
         {
             OnEnemyTurn?.Invoke();
-            Debug.Log("Enemy turn");
         }
 
         private void HandlePlayerTurn()
@@ -91,11 +90,11 @@ namespace Beatmate.Core
             {
                 BeatManager.Instance.StartAudio();
             }
-            Debug.Log("Player turn");
         }
 
         private void HandleDialogue()
         {
+            //TODO: Implement dialogue sequence
             StartCoroutine(
                 DialogueManager.Instance.TypeText("I've been acting weird? It's probably nothing")
             );

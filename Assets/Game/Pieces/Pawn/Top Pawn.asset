@@ -15,6 +15,7 @@ MonoBehaviour:
   BlueSprite: {fileID: 1950863533, guid: 3778e2a2264cd75438024c79ce484547, type: 3}
   RedSprite: {fileID: 1164652995, guid: 3778e2a2264cd75438024c79ce484547, type: 3}
   GreySprite: {fileID: 1668993065, guid: 3778e2a2264cd75438024c79ce484547, type: 3}
+  <IsPawn>k__BackingField: 1
   <PossibleMovements>k__BackingField:
   - {x: 0, y: -1}
   <PossibleAttacks>k__BackingField:
