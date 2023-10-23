@@ -12,6 +12,8 @@ namespace Beatmate.Core
         public GameState State;
 
         public static event Action<GameState> OnGameStateChange;
+        public static event Action OnPlayerTurn;
+        public static event Action OnEnemyTurn;
 
         private void Awake()
         {
@@ -25,8 +27,6 @@ namespace Beatmate.Core
 
         public void UpdateGameState(GameState newState)
         {
-            State = newState;
-
             switch (newState)
             {
                 case GameState.Dialogue:
@@ -47,6 +47,8 @@ namespace Beatmate.Core
                 default:
                     throw new ArgumentOutOfRangeException(nameof(newState), newState, null);
             }
+
+            State = newState;
 
             OnGameStateChange?.Invoke(newState);
         }
@@ -78,11 +80,13 @@ namespace Beatmate.Core
 
         private void HandleEnemyTurn()
         {
+            OnEnemyTurn?.Invoke();
             Debug.Log("Enemy turn");
         }
 
         private void HandlePlayerTurn()
         {
+            OnPlayerTurn?.Invoke();
             if (!BeatManager.Instance.IsAudioPlaying())
             {
                 BeatManager.Instance.StartAudio();

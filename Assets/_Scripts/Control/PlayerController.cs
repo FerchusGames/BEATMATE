@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using Beatmate.Movement;
+using Beatmate.Core;
 
 namespace Beatmate.Control
 {
@@ -14,6 +15,16 @@ namespace Beatmate.Control
 
         public static event Action<Vector2Int> OnMovementVectorChange;
 
+        private void OnEnable()
+        {
+            GameManager.OnEnemyTurn += EndTurn;
+        }
+
+        private void OnDisable()
+        {
+            GameManager.OnEnemyTurn -= EndTurn;
+        }
+
         private void Awake()
         {
             _mover = GetComponent<Mover>();
@@ -21,8 +32,20 @@ namespace Beatmate.Control
 
         private void Update()
         {
+            if (GameManager.Instance.State != GameState.PlayerTurn)
+                return;
             _movementVector = GetMovementVector();
             OnMovementVectorChange?.Invoke(_movementVector);
+        }
+
+        private void EndTurn()
+        {
+            Move();
+            OnMovementVectorChange?.Invoke(Vector2Int.zero);
+        }
+
+        private void Move()
+        {
             _mover.Move(_movementVector);
         }
 

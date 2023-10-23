@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96be0a525155b6b41b7b8b5f9fb3cf96, type: 3}
   m_Name: Top Pawn
   m_EditorClassIdentifier: 
-  _blueSprite: {fileID: 1950863533, guid: 3778e2a2264cd75438024c79ce484547, type: 3}
-  _redSprite: {fileID: 1164652995, guid: 3778e2a2264cd75438024c79ce484547, type: 3}
-  _greySprite: {fileID: 1668993065, guid: 3778e2a2264cd75438024c79ce484547, type: 3}
+  BlueSprite: {fileID: 1950863533, guid: 3778e2a2264cd75438024c79ce484547, type: 3}
+  RedSprite: {fileID: 1164652995, guid: 3778e2a2264cd75438024c79ce484547, type: 3}
+  GreySprite: {fileID: 1668993065, guid: 3778e2a2264cd75438024c79ce484547, type: 3}
   <PossibleMovements>k__BackingField:
   - {x: 0, y: -1}
   <PossibleAttacks>k__BackingField:

@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96be0a525155b6b41b7b8b5f9fb3cf96, type: 3}
   m_Name: Bishop
   m_EditorClassIdentifier: 
-  _blueSprite: {fileID: -146329599, guid: 3778e2a2264cd75438024c79ce484547, type: 3}
-  _redSprite: {fileID: 911121607, guid: 3778e2a2264cd75438024c79ce484547, type: 3}
-  _greySprite: {fileID: 1342421711, guid: 3778e2a2264cd75438024c79ce484547, type: 3}
+  BlueSprite: {fileID: -146329599, guid: 3778e2a2264cd75438024c79ce484547, type: 3}
+  RedSprite: {fileID: 911121607, guid: 3778e2a2264cd75438024c79ce484547, type: 3}
+  GreySprite: {fileID: 1342421711, guid: 3778e2a2264cd75438024c79ce484547, type: 3}
+  ChipPrefab: {fileID: 0}
   <PossibleMovements>k__BackingField:
   - {x: 1, y: 1}
   - {x: 2, y: 2}
@@ -44,3 +45,5 @@ MonoBehaviour:
   - {x: -5, y: 5}
   - {x: -6, y: 6}
   - {x: -7, y: 7}
+  <PossibleAttacks>k__BackingField: []
+  <FirstMovement>k__BackingField: []
